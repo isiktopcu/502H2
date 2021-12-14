@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[21]:
-
-
 import wbdata
 import datetime
 wbdata.get_source()
@@ -19,4 +13,3 @@ df = wbdata.get_dataframe(indicators, country=country, convert_date=True)
 df.dropna(inplace=True)
 df.count()
 df.to_csv('pakistan.csv',index=False)
-
